@@ -1,1 +1,51 @@
 /*  your css code here. If applicable */
+body {
+font-family: Arial, sans-serif;
+background: #f0f0f0;
+margin: 0;
+padding: 0;
+display: flex;
+justify-content: center;
+align-items: center;
+height: 100vh;
+}
+
+
+.container {
+background: white;
+padding: 20px;
+border-radius: 10px;
+width: 350px;
+box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+text-align: center;
+}
+
+
+#board {
+display: grid;
+grid-template-columns: repeat(3, 100px);
+grid-gap: 5px;
+margin-top: 20px;
+display: none;
+}
+
+
+.cell {
+width: 100px;
+height: 100px;
+background: #e8e8e8;
+display: flex;
+justify-content: center;
+align-items: center;
+font-size: 40px;
+cursor: pointer;
+border-radius: 5px;
+}
+
+
+.message {
+margin-top: 15px;
+font-size: 20px;
+font-weight: bold;
+min-height: 25px;
+}
