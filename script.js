@@ -76,7 +76,7 @@ const submitBtn = document.getElementById("submit");
         currentSymbol = "o";
       } else {
         currentPlayer = player1;
-        currentSymbol = "X";
+        currentSymbol = "x";
       }
 
       message.textContent = `${currentPlayer}, you're up!`;
