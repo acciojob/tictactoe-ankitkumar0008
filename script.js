@@ -35,7 +35,7 @@ const submitBtn = document.getElementById("submit");
       board.style.display = "grid";
 
       currentPlayer = player1;
-      currentSymbol = "X";
+      currentSymbol = "x";
 
       message.textContent = `${currentPlayer}, you're up!`;
 
@@ -62,7 +62,7 @@ const submitBtn = document.getElementById("submit");
       cell.textContent = currentSymbol;
 
       if (checkWinner()) {
-        message.textContent = `${currentPlayer}, congratulations you won!`;
+        message.textContent = `${currentPlayer} congratulations you won!`;
         gameActive = false;
         return;
       }
@@ -73,7 +73,7 @@ const submitBtn = document.getElementById("submit");
     function switchPlayer() {
       if (currentPlayer === player1) {
         currentPlayer = player2;
-        currentSymbol = "O";
+        currentSymbol = "o";
       } else {
         currentPlayer = player1;
         currentSymbol = "X";
